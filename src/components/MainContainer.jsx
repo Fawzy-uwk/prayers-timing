@@ -142,14 +142,14 @@ function MainContainer() {
     return (
         <>
             <Grid container  >
-                <Grid size={{ xs: 12, md: 6 }}>
-                    <div className='mb-4 flex flex-col items-start justify-center gap-2'>
+                <Grid size={{ xs: 12, md: 6 }} >
+                    <div className='my-4 flex flex-col items-start justify-center gap-2'>
                         <span className='text-base font-semibold text-gray-300'> ه  {date.hijri.date} | م {date.gregorian.date} | {time}</span>
                         <h1 className='text-4xl font-bold'>{selectedCity.shownName}</h1>
                     </div>
                 </Grid>
                 <Grid size={{ xs: 12, md: 6 }}>
-                    <div className='mb-4 flex flex-col items-start justify-center gap-2'>
+                    <div className='my-4 flex flex-col items-start justify-center gap-2'>
                         <span className='text-base font-semibold text-gray-300' >متبقى حتى صلاة {prayersArray[nextPrayerIndex].name} </span>
                         <h3 className='text-4xl font-bold text-right'> {remainingTime}  </h3>
 
